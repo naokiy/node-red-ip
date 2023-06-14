@@ -1,0 +1,15 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
+{
+	"name": "Node-RED",
+	"image": "mcr.microsoft.com/devcontainers/typescript-node:0-20",
+	"remoteUser": "node",
+	"mounts": [
+		"source=${localWorkspaceFolderBasename}-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
+	],
+	"postCreateCommand": {
+		"Add permission to node_modules": "sudo chown node node_modules",
+		"Installing global npm packages": "npm install -g gitmoji-cli @go-task/cli tsx && npm install -g --unsafe-perm node-red"
+	},
+	"appPort": 1880
+}
