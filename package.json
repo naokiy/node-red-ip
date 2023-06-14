@@ -2,6 +2,7 @@
 	"files": [
 		"dist"
 	],
+	"keywords": ["node-red"],
 	"node-red": {
 		"nodes": {
 			"ip": "dist/ip.js"
