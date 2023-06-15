@@ -1,24 +1,13 @@
-import { BaseNode } from "./base_node"
+import { IpNode, IpNodeDef } from "./IpNode"
 
-import { Node, NodeAPI, NodeDef, NodeMessage } from 'node-red'
+import { NodeAPI } from 'node-red'
 
-function init(RED: NodeAPI) {
-    class LowerCaseNode extends BaseNode {
-        constructor(config: NodeDef) {
-            super(config, RED);
-
-            this.on("input", message => {
-                if (isString(message?.payload)) {
-                    message.payload = message.payload.toLowerCase();    
-                }
-                this.send(message);
-            })
+export = (RED: NodeAPI) => {
+    class IpNodeToRegister extends IpNode {
+        constructor(config: IpNodeDef) {
+            super(config);
+            this.appendTo(RED);
         }
     }
-}
-
-function isString(value: any): value is string {
-    return value !== null && value !== undefined && typeof value === "string";
-}
-
-export = init;
+    RED.nodes.registerType("ip", <any>IpNodeToRegister);
+};
