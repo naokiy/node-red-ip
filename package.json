@@ -12,6 +12,14 @@
 	"keywords": [
 		"node-red"
 	],
+	"publishConfig": {
+		"access": "restricted",
+		"registry": "https://npm.pkg.github.com/naokiy"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/naokiy/node-red-ip.git"
+	},
 	"scripts": {
 		"build": "npm run clean && npm run build-ts && npm run copy-static-assets",
 		"clean": "rimraf dist",
