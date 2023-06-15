@@ -1,13 +1,16 @@
-import { IpNode, IpNodeDef } from "./IpNode"
+import type { IpNodeDef } from "./IpNode";
+import { IpNode } from "./IpNode";
 
-import { NodeAPI } from 'node-red'
+import type { NodeAPI } from "node-red";
 
 export = (RED: NodeAPI) => {
-    class IpNodeToRegister extends IpNode {
-        constructor(config: IpNodeDef) {
-            super(config);
-            this.appendTo(RED);
-        }
+  class IpNodeToRegister extends IpNode {
+    constructor(config: IpNodeDef) {
+      super(config);
+      this.appendTo(RED);
     }
-    RED.nodes.registerType("ip", <any>IpNodeToRegister);
+  }
+  /* eslint-disable @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-explicit-any */
+  RED.nodes.registerType("ip", <any>IpNodeToRegister);
+  /* eslint-enable @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-explicit-any */
 };
