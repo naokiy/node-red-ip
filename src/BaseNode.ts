@@ -7,7 +7,7 @@ export abstract class BaseNode<T extends NodeDef> {
 
   protected appendTo(RED: NodeAPI) {
     RED.nodes.createNode(this, this.config);
-    this.on("input", (message) => this.onInput(message));
+    this.on("input", message => this.onInput(message));
   }
 
   protected onInput(message: NodeMessageInFlow) {}

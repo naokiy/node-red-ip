@@ -10,6 +10,7 @@ export = (RED: NodeAPI) => {
       this.appendTo(RED);
     }
   }
+
   /* eslint-disable @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-explicit-any */
   RED.nodes.registerType("ip", <any>IpNodeToRegister);
   /* eslint-enable @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-explicit-any */

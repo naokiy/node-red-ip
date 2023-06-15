@@ -1,7 +1,7 @@
 {
 	"name": "@naokiy/node-red-ip",
 	"version": "0.0.0",
-	"description": "Node-RED Node sample",
+	"description": "Provide IP address for NodeRED",
 	"type": "commonjs",
 	"main": "none",
 	"author": "naokiy",
