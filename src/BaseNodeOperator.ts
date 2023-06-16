@@ -9,5 +9,5 @@ export abstract class BaseNodeOperator<
     protected readonly config: TConfig
   ) {}
 
-  abstract postCreate(node: Node<TCred>): void
+  abstract postCreate(node: Node<TCred>): void;
 }
