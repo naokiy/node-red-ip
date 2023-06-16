@@ -1,4 +1,4 @@
-import type { Node, NodeMessageInFlow } from "node-red";
+import type { Node } from "node-red";
 
 export abstract class BaseNodeOperator<
   TConfig extends object,
@@ -9,5 +9,5 @@ export abstract class BaseNodeOperator<
     protected readonly config: TConfig
   ) {}
 
-  public onInput(message: NodeMessageInFlow) {}
+  abstract postCreate(node: Node<TCred>): void;
 }
