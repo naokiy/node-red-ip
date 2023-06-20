@@ -23,7 +23,7 @@
 	"scripts": {
 		"build": "npm run clean && npm run build-ts && npm run copy-static-assets",
 		"clean": "rimraf dist",
-		"build-ts": "tsc",
+		"build-ts": "tsc -p tsconfig.prod.json",
 		"copy-static-assets": "copyfiles -f ./public/**/*.html dist"
 	},
 	"node-red": {
