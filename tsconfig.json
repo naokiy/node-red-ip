@@ -5,10 +5,10 @@
     "outDir": "./dist",
     "rootDir": "./src",
     "moduleResolution": "node",
+    "esModuleInterop": true,
     "noImplicitAny": true,
     "sourceMap": true,
     "strict": true                             /* Skip type checking all .d.ts files. */
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["src/**/*.spec.ts"]
+  "include": ["src/**/*.ts"]
 }
