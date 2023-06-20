@@ -21,6 +21,7 @@
 		"url": "https://github.com/naokiy/node-red-ip.git"
 	},
 	"scripts": {
+		"test": "jest",
 		"build": "npm run clean && npm run build-ts && npm run copy-static-assets",
 		"clean": "rimraf dist",
 		"build-ts": "tsc -p tsconfig.prod.json",

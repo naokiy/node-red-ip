@@ -8,6 +8,7 @@
     "esModuleInterop": true,
     "noImplicitAny": true,
     "sourceMap": true,
+    "skipLibCheck": true,
     "strict": true                             /* Skip type checking all .d.ts files. */
   },
   "include": ["src/**/*.ts"]
