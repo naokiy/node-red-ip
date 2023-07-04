@@ -48,7 +48,7 @@
 		"eslint-import-resolver-typescript": "3.5.5",
 		"eslint-plugin-import": "npm:eslint-plugin-i@2.27.5-3",
 		"husky": "8.0.3",
-		"jest": "29.5.0",
+		"jest": "29.6.0",
 		"lint-staged": "13.2.3",
 		"node-red": "3.0.2",
 		"node-red-node-test-helper": "0.3.2",
