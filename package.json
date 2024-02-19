@@ -57,7 +57,7 @@
 		"typescript": "5.3.3"
 	},
 	"dependencies": {
-		"ip": "1.1.8"
+		"ip": "1.1.9"
 	},
 	"jest": {
 		"transform": {
