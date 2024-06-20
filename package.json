@@ -54,7 +54,7 @@
 		"node-red-node-test-helper": "0.3.4",
 		"prettier": "3.3.2",
 		"rimraf": "5.0.7",
-		"typescript": "5.4.5"
+		"typescript": "5.5.2"
 	},
 	"dependencies": {
 		"ip": "1.1.9"
