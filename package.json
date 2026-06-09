@@ -52,7 +52,7 @@
 		"lint-staged": "14.0.1",
 		"node-red": "3.1.15",
 		"node-red-node-test-helper": "0.3.6",
-		"prettier": "3.8.3",
+		"prettier": "3.8.4",
 		"rimraf": "5.0.10",
 		"typescript": "5.9.3"
 	},
